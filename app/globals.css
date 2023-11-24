@@ -9,3 +9,30 @@
   -o-appearance: none;
   appearance: none;
 }
+
+.herosection_background {
+  background-image: url("../public/HowItWorks-Hero.jpeg");
+  background-size: cover;
+}
+
+/*scrollbar settings */
+.billy_scrollbar {
+  width: 100%;
+  height: 100vh;
+}
+
+.billy_scrollbar::-webkit-scrollbar {
+  width: 5px;   
+}
+
+.billy_scrollbar::-webkit-scrollbar-thumb {
+  background-color: #FFBA69;  
+}
+
+.billy_scrollbar::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.billy_scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: transparent; 
+}
