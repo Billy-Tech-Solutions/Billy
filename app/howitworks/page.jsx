@@ -166,30 +166,35 @@ const HowItWorks = () => {
         </div>
       </section>
 
-      <section className="w-full h-screen flex items-center justify-center gap-10 bg-pink-secondary p-10">
-        <div className="w-full md:w-[80%] flex flex-col md:flex-row gap-10">
-          <div className="w-full md:w-1/2 flex flex-col gap-4 items-center border-2 border-pink-main rounded-md">
-            <MdGroups className="text-[200px]" />
-            <h1 className="w-[100px] p-2 m-auto bg-pink-main text-white font-black text-center rounded-md drop-shadow-md">
-              Step 1
-            </h1>
-            <h2 className="w-2/3 m-auto text-sm font-black text-purple-main text-center">
-              Choose your audience and set a budget.
-            </h2>
+      <section className="w-full h-screen flex flex-col items-center justify-center gap-10 bg-pink-secondary p-10">
+        <h1 className="w-full text-[30px] lg:text-[60px] text-center font-black">Simple and Straightforward</h1>
+        <div className="w-full md:w-[80%] flex flex-col lg:flex-row gap-8 items-center justify-center">
+          <div className="w-full h-64 lg:w-1/2 flex flex-col lg:flex-row items-center justify-center lg:gap-8 bg-gradient-to-br from-purple-main to-purple-secondary rounded-md">
+            <MdGroups className="text-[100px] lg:text-[200px] text-yellow-main drop-shadow-md" />
+            <div className="w-[50%] flex flex-col gap-4">
+              <h1 className="w-full p-2 m-auto bg-pink-main text-white font-black text-center rounded-md drop-shadow-md">
+                Step 1
+              </h1>
+              <h2 className="w-full text-sm font-black text-white">
+                Choose your audience and set a budget.
+              </h2>
+            </div>
           </div>
-          <div className="w-full md:w-1/2 flex flex-col gap-4 items-center border-2 border-pink-main rounded-md">
-          <MdInsertChartOutlined className="text-[200px]" />
-            <h1 className="w-[100px] p-2 m-auto bg-pink-main text-white font-black text-center rounded-md drop-shadow-md">
-              Step 2
-            </h1>
-            <h2 className="w-2/3 m-auto text-sm font-black text-purple-main text-center">
+          <div className="w-full h-64 lg:w-1/2 flex flex-col lg:flex-row items-center justify-center lg:gap-8 bg-gradient-to-br from-purple-main to-purple-secondary rounded-md">
+            <MdInsertChartOutlined className="text-[100px] lg:text-[200px] text-yellow-main drop-shadow-md" />
+            <div className="w-[50%] flex flex-col gap-4">
+              <h1 className="w-full p-2 m-auto bg-pink-main text-white font-black text-center rounded-md drop-shadow-md">
+                Step 2
+              </h1>
+              <h2 className="w-full text-sm font-black text-white">
               Track your stats.
-            </h2>
+              </h2>
+            </div>
           </div>
         </div>
       </section>
-      <section className="w-full h-60 flex items-center justify-center gap-8 bg-white p-10">
-        <p className="text-pink-main text-2xl font-black">Interested?</p>
+      <section className="w-full h-screen lg:h-[70vh] flex flex-col items-center justify-center gap-4 bg-gradient-to-b from-purple-main to-yellow-main p-10">
+        <p className="text-white text-[45px] lg:text-[60px] font-black drop-shadow-lg">Interested?</p>
         <JoinOurWaitlist />
       </section>
       <Footer />
