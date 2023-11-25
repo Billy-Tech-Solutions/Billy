@@ -14,7 +14,8 @@ module.exports = {
         'gray-main': '#C4C4C4',
         'yellow-main': '#FFBA69',
         
-        'pink-secondary': '#EBDCFF'
+        'pink-secondary': '#EBDCFF',
+        'purple-secondary': '#160032'
       }
     },
   },
