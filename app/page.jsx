@@ -5,17 +5,11 @@ export default function Home() {
   return (
     <main
       id="main"
-      className="w-full h-[85vh] flex items-center justify-center"
+      className="w-full h-[93vh] flex items-center justify-center bg-white"
     >
-      <video autoPlay muted loop id="background-video">
-        <source src="billboard-video.mp4" type="video/mp4" />
-      </video>
-
-      <div className="w-full h-full flex justify-center items-center bg-black/80">
-        <h1 className="text-center text-[40px] lg:text-[150px] font-black drop-shadow-lg bg-clip-text text-transparent bg-gradient-to-br from-purple-main/90 to-pink-main/90">
-          Hello, this is Billy!
-        </h1>
-      </div>
+      <h1 id="hellothisisbilly" className="w-full text-center drop-shadow-lg text-[140px] lg:text-[400px]">
+        Billy
+      </h1>
     </main>
   );
 }
