@@ -21,7 +21,7 @@ import HowItWorksHero from "@/public/HowItWorks-Hero.jpeg";
 
 const HowItWorks = () => {
   const [showDropdown, setShowDropdown] = useState(Array(3).fill(false));
-  const [inputIndex, setInputIndex] = useState(null)
+  const [inputIndex, setInputIndex] = useState(null);
 
   const handleShowDropdown = (index) => {
     setInputIndex(index);
@@ -48,7 +48,7 @@ const HowItWorks = () => {
         </div>
       </section>
 
-      <section className="w-full min-h-screen flex flex-col md:flex-row items-center justify-center gap-10 bg bg-purple-main p-10">
+      <section className="w-full min-h-screen flex flex-col md:flex-row items-center justify-center gap-10 bg-gradient-to-br from-purple-main to-purple-secondary p-10">
         <div className="w-fit h-fit px-4 py-8 bg-white flex flex-col gap-2 rounded-md drop-shadow-lg">
           <div className="flex flex-col">
             <h1 className="font-bold">Select your audience.</h1>
@@ -166,8 +166,10 @@ const HowItWorks = () => {
         </div>
       </section>
 
-      <section className="w-full h-screen flex flex-col items-center justify-center gap-10 bg-pink-secondary p-10">
-        <h1 className="w-full text-[30px] lg:text-[60px] text-center font-black">Simple and Straightforward</h1>
+      <section className="w-full h-screen flex flex-col items-center justify-center gap-10 bg-gradient-to-bl from-pink-main to-pink-secondary p-10">
+        <h1 className="w-full text-[30px] lg:text-[60px] text-center font-black">
+          Simple and Straightforward
+        </h1>
         <div className="w-full md:w-[80%] flex flex-col lg:flex-row gap-8 items-center justify-center">
           <div className="w-full h-64 lg:w-1/2 flex flex-col lg:flex-row items-center justify-center lg:gap-8 bg-gradient-to-br from-purple-main to-purple-secondary rounded-md">
             <MdGroups className="text-[100px] lg:text-[200px] text-yellow-main drop-shadow-md" />
@@ -187,15 +189,19 @@ const HowItWorks = () => {
                 Step 2
               </h1>
               <h2 className="w-full text-sm font-black text-white">
-              Track your stats.
+                Track your stats.
               </h2>
             </div>
           </div>
         </div>
       </section>
-      <section className="w-full h-screen lg:h-[70vh] flex flex-col items-center justify-center gap-4 bg-gradient-to-b from-purple-main to-yellow-main p-10">
-        <p className="text-white text-[45px] lg:text-[60px] font-black drop-shadow-lg">Interested?</p>
-        <JoinOurWaitlist />
+      <section className="w-full h-screen lg:h-[75vh] flex flex-col items-center justify-center gap-4 bg-gradient-to-b from-purple-main to-pink-main">
+        <div className="w-full h-full flex flex-col items-center justify-center gap-6 bg-black/60">
+          <p className="text-white text-[45px] lg:text-[60px] font-black drop-shadow-lg">
+            Interested?
+          </p>
+          <JoinOurWaitlist />
+        </div>
       </section>
       <Footer />
     </main>
