@@ -15,6 +15,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en" className="billy_scrollbar">
+            <head>
+                <meta
+                    property="og:image"
+                    content="https://res.cloudinary.com/ddgv1onc1/image/upload/v1701769992/ihvmoevzpoaowcxr6ztp.png"
+                />
+            </head>
             <body className={roboto.className}>
                 <Nav />
                 {children}
