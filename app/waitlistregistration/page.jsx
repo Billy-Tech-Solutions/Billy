@@ -66,6 +66,48 @@ const WaitlistRegistration = () => {
                     <p className="w-full text-pink-main font-bold text-xl">
                         Join our waitlist!
                     </p>
+
+                    <div className="w-full flex flex-col gap-2 text-gray-main items-center justify-center">
+                        <h2>How will you use Billy?</h2>
+                        <div className="w-full flex items-center justify-center gap-4 text-lg">
+                            <div
+                                className="flex items-center gap-1 cursor-pointer"
+                                onClick={() => {
+                                    document
+                                        .getElementById('advertiser')
+                                        .click()
+                                }}
+                            >
+                                <input
+                                    id="advertiser"
+                                    type="radio"
+                                    name="company_type"
+                                    onChange={(e) =>
+                                        setCompanyType(e.target.value)
+                                    }
+                                    value="advertiser"
+                                />
+                                <p>Advertiser</p>
+                            </div>
+                            <div
+                                className="flex items-center gap-1 cursor-pointer"
+                                onClick={() => {
+                                    document.getElementById('owner').click()
+                                }}
+                            >
+                                <input
+                                    id="owner"
+                                    type="radio"
+                                    name="company_type"
+                                    onChange={(e) =>
+                                        setCompanyType(e.target.value)
+                                    }
+                                    value="provider"
+                                />
+                                <p>Ad Space Owner</p>
+                            </div>
+                        </div>
+                    </div>
                     <div className="w-full flex flex-col gap-6 items-center justify-center ">
                         <div className="w-full flex flex-col gap-0.5">
                             <p className="text-xs text-gray-main">Email</p>
@@ -82,33 +124,6 @@ const WaitlistRegistration = () => {
                                 onChange={(e) => setCompanyName(e.target.value)}
                                 className="focus:outline-none w-full px-4 py-2 text-xs rounded-md border border-gray-main drop-shadow-sm"
                             />
-                        </div>
-                        <div className="w-full flex flex-col gap-2 text-xs text-gray-main">
-                            <h2>How will you use Billy?</h2>
-                            <div className="w-full flex items-center gap-4">
-                                <div className="flex items-center gap-1">
-                                    <input
-                                        type="radio"
-                                        name="company_type"
-                                        onChange={(e) =>
-                                            setCompanyType(e.target.value)
-                                        }
-                                        value="advertiser"
-                                    />
-                                    <p>Advertiser</p>
-                                </div>
-                                <div className="flex items-center gap-1">
-                                    <input
-                                        type="radio"
-                                        name="company_type"
-                                        onChange={(e) =>
-                                            setCompanyType(e.target.value)
-                                        }
-                                        value="provider"
-                                    />
-                                    <p>Ad Space Provider</p>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <button
