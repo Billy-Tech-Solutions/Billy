@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .input__styles {
+    @apply w-full p-4 rounded-lg text-xs
+  }
+
+
+  .forms__section__styles {
+    @apply w-[80%] h-screen text-white flex flex-col gap-12 items-center justify-center
+  }
+  .forms__heading__styles {
+    @apply w-full text-white text-3xl font-bold
+  }
+  .forms__button__styles {
+    @apply w-full p-4 rounded-lg font-bold bg-gradient-to-br from-purple-main to-pink-main
+  }
+  .forms__navigate__button {
+    @apply w-full flex justify-end uppercase text-xl text-yellow-main
+  }
+}
+
 .appearance {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -36,6 +56,7 @@
 .billy_scrollbar::-webkit-scrollbar-thumb:hover {
   background-color: #FFBA69; 
 }
+
 #background-video {
   width: 100vw;
   height: 100vh;
@@ -56,3 +77,11 @@
   -webkit-text-fill-color: transparent;
   font-weight: 900;
 }
+
+.image_section {
+  background-image: url("../public/landing-image.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+

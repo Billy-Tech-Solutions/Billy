@@ -1,15 +1,15 @@
 import Image from "next/image";
 import Nav from "@/components/Nav";
+import WaitlistSignup from "@/components/WaitlistSignup";
 
 export default function Home() {
   return (
-    <main
-      id="main"
-      className="w-full h-[93vh] flex items-center justify-center bg-white"
-    >
-      <h1 id="hellothisisbilly" className="w-full text-center drop-shadow-lg text-[140px] lg:text-[400px]">
-        Billy
-      </h1>
+    <main className="w-full min-h-screen flex flex-col items-center justify-center">
+      <section className="image_section w-full h-screen bg-no-repeat">
+      </section>
+      <section className="w-full min-h-screen bg-black flex items-center justify-center">
+        <WaitlistSignup/>
+      </section>
     </main>
   );
 }
