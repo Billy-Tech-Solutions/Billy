@@ -9,16 +9,31 @@
 
 
   .forms__section__styles {
-    @apply w-[80%] h-screen text-white flex flex-col gap-12 items-center justify-center
+    @apply w-[80%] min-h-screen text-white flex flex-col gap-12 items-center justify-center
   }
   .forms__heading__styles {
     @apply w-full text-white text-3xl font-bold
   }
+  .forms__subheading__styles {
+    @apply text-yellow-main text-lg font-bold
+  }
   .forms__button__styles {
-    @apply w-full p-4 rounded-lg font-bold bg-gradient-to-br from-purple-main to-pink-main
+    @apply w-full p-4 rounded-lg font-bold border border-pink-main
   }
   .forms__navigate__button {
-    @apply w-full flex justify-end uppercase text-xl text-yellow-main
+    @apply w-fit uppercase text-xl text-yellow-main
+  }
+  .forms__question__styles {
+    @apply w-full p-8 border border-white rounded-lg flex flex-col gap-4
+  }
+  .forms__question__heading__styles {
+    @apply uppercase font-bold text-xl
+  }
+  .forms__selectQuestion__styles {
+    @apply w-full flex flex-wrap justify-between gap-4
+  }
+  .forms__questionItem__styles {
+    @apply flex flex-col px-4 py-2 border border-pink-main rounded-full grow items-center
   }
 }
 
@@ -84,4 +99,30 @@
   background-position: center;
 }
 
+input[type="date"] {
+  
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #C848B9;
+  outline: none;
+}
+
+.transition-items {
+  transition: max-height 1s ease, opacity 1s ease; /* Transition max-height and opacity */
+  overflow: hidden;
+  opacity: 0;
+  max-height: 0;
+}
+
+.show {
+  opacity: 1;
+  max-height: 1000px; /* Adjust height as needed */
+}
+
+.hidden {
+  opacity: 0;
+  max-height: 0;
+}
 
