@@ -165,7 +165,7 @@ const WaitlistSignup = () => {
     function scrollToSection(sectionId) {
         const section = document.getElementById(sectionId);
         if (section) {
-            section.scrollIntoView({behavior: "smooth"})
+            section.scrollIntoView({behavior: "smooth", block: "start"})
         }
     }
 
@@ -290,7 +290,7 @@ const WaitlistSignup = () => {
 
                             <div className="w-full flex gap-6 justify-end">
                                 <button className="forms__navigate__button" onClick={() => scrollToSection("forms__section2")}>back</button>
-                                <button className="forms__navigate__button">next</button>
+                                <button className="forms__navigate__button" onClick={() => scrollToSection("forms__section4")}>next</button>
                             </div>
                         </div>
                     ) : (
@@ -330,14 +330,20 @@ const WaitlistSignup = () => {
                                 </div>     
                                 )}
                             </div>
-                            <div>
+                            <div className="w-full flex gap-6 justify-end">
                                 <button className="forms__navigate__button" onClick={() => scrollToSection("forms__section2")}>back</button>
-                                <button className="forms__navigate__button">next</button>
+                                <button className="forms__navigate__button" onClick={() => scrollToSection("forms__section4")}>submit</button>
                             </div>
                         </div>
                     )
                 }
                 
+            </div>
+            <div id="forms__section4" className="herosection_background forms__section__styles p-0">
+                <div className="w-full h-full flex flex-col justify-center gap-3 bg-black/60 p-10">
+                    <h1 className="w-full font-bold text-pink-main text-4xl drop-shadow-lg">You have successfully registered!</h1>
+                    <h2>Kindly wait for our email confirmation.</h2>
+                </div>
             </div>
         </div>
     )

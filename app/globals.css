@@ -9,7 +9,7 @@
 
 
   .forms__section__styles {
-    @apply w-[80%] min-h-screen text-white flex flex-col gap-12 items-center justify-center
+    @apply w-full h-screen p-10 text-white flex flex-col gap-12 items-center justify-center
   }
   .forms__heading__styles {
     @apply w-full text-white text-3xl font-bold
@@ -126,3 +126,13 @@ input[type="date"] {
   max-height: 0;
 }
 
+.header {
+  width: 100%;
+  background: url("../public/billboard-gif-2.gif");
+  background-clip: text;
+  color: transparent;
+  font-size: 9rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-align: center;
+}
