@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link'
 
 const SignUp = () => {
   return (
@@ -7,7 +7,7 @@ const SignUp = () => {
         Sign Up
       </button>
     </Link>
-  );
-};
+  )
+}
 
-export default SignUp;
+export default SignUp

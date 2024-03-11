@@ -2,38 +2,108 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
 @layer components {
   .input__styles {
-    @apply w-full p-4 rounded-lg text-xs
+    @apply w-full p-4 rounded-lg text-xs text-black;
   }
-
 
   .forms__section__styles {
-    @apply w-full h-screen p-10 text-white flex flex-col gap-12 items-center justify-center
+    @apply w-full h-screen p-10 text-white flex flex-col gap-12 items-center justify-center;
   }
   .forms__heading__styles {
-    @apply w-full text-white text-3xl font-bold
+    @apply w-full text-white text-3xl font-bold;
   }
   .forms__subheading__styles {
-    @apply text-yellow-main text-lg font-bold
+    @apply text-yellow-main text-lg font-bold;
   }
   .forms__button__styles {
-    @apply w-full p-4 rounded-lg font-bold border border-pink-main
+    @apply w-full p-4 rounded-lg font-bold border border-pink-main;
   }
   .forms__navigate__button {
-    @apply w-fit uppercase text-xl text-yellow-main
+    @apply w-fit uppercase text-xl text-yellow-main;
   }
   .forms__question__styles {
-    @apply w-full p-8 border border-white rounded-lg flex flex-col gap-4
+    @apply w-full p-8 border border-white rounded-lg flex flex-col gap-4;
   }
   .forms__question__heading__styles {
-    @apply uppercase font-bold text-xl
+    @apply uppercase font-bold text-xl;
   }
   .forms__selectQuestion__styles {
-    @apply w-full flex flex-wrap justify-between gap-4
+    @apply w-full flex flex-wrap justify-between gap-4;
   }
   .forms__questionItem__styles {
-    @apply flex flex-col px-4 py-2 border border-pink-main rounded-full grow items-center
+    @apply flex flex-col px-4 py-2 border border-pink-main rounded-full grow items-center;
   }
 }
 
@@ -46,7 +116,7 @@
 }
 
 .herosection_background {
-  background-image: url("../public/HowItWorks-Hero.jpeg");
+  background-image: url('../public/HowItWorks-Hero.jpeg');
   background-size: cover;
 }
 
@@ -57,11 +127,11 @@
 }
 
 .billy_scrollbar::-webkit-scrollbar {
-  width: 5px;   
+  width: 5px;
 }
 
 .billy_scrollbar::-webkit-scrollbar-thumb {
-  background-color: #FFBA69;  
+  background-color: #ffba69;
 }
 
 .billy_scrollbar::-webkit-scrollbar-track {
@@ -69,7 +139,7 @@
 }
 
 .billy_scrollbar::-webkit-scrollbar-thumb:hover {
-  background-color: #FFBA69; 
+  background-color: #ffba69;
 }
 
 #background-video {
@@ -84,7 +154,7 @@
   z-index: -1;
 }
 
-#hellothisisbilly{
+#hellothisisbilly {
   text-transform: uppercase;
   background: url('../public/billboard-gif-2.gif');
   background-clip: text;
@@ -94,18 +164,17 @@
 }
 
 .image_section {
-  background-image: url("../public/landing-image.jpg");
+  background-image: url('../public/landing-image.jpg');
   background-size: cover;
   background-position: center;
 }
 
-input[type="date"] {
-  
+input[type='date'] {
   width: 100%;
   padding: 8px;
   border-radius: 4px;
   font-size: 16px;
-  color: #C848B9;
+  color: #c848b9;
   outline: none;
 }
 
@@ -128,7 +197,7 @@ input[type="date"] {
 
 .header {
   width: 100%;
-  background: url("../public/billboard-gif-2.gif");
+  background: url('../public/billboard-gif-2.gif');
   background-clip: text;
   color: transparent;
   font-size: 9rem;
