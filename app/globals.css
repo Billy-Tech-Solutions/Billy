@@ -200,7 +200,7 @@ input[type='date'] {
   background: url('../public/billboard-gif-2.gif');
   background-clip: text;
   color: transparent;
-  font-size: 9rem;
+  font-size: clamp(9rem, 30vw, 20rem);
   text-transform: uppercase;
   font-weight: 900;
   text-align: center;

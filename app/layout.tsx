@@ -1,9 +1,11 @@
 import { Roboto } from 'next/font/google'
+import '@quillforms/renderer-core/build-style/style.css'
 import './globals.css'
 import Nav from '@/components/Nav'
-import Footer from '@/components/Footer'
+import Footer from '@/components/layout/Footer'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import Navbar from '@/components/layout/Navbar'
 
 const roboto = Roboto({ subsets: ['latin'], weight: ['400', '500'] })
 
@@ -22,7 +24,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className={roboto.className}>
-        <Nav />
+        {/* <Nav /> */}
         {children}
         <ToastContainer
           position="bottom-center"
