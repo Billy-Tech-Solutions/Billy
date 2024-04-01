@@ -111,6 +111,7 @@ export async function registerWaitlist(input: InputData) {
     // const industries = getSelectedItems(request.industries)
 
     const { data, error } = await supabase.from('waitlist').insert({
+      // @ts-ignore
       email,
       company_type,
       company_name,

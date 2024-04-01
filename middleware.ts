@@ -4,7 +4,6 @@ import type { NextRequest } from 'next/server'
 // This function can be marked `async` if using `await` inside
 export function middleware(request: NextRequest) {
   if (process.env.NODE_ENV !== 'production') return
-
   if (
     request.nextUrl.pathname.startsWith('/') &&
     request.nextUrl.pathname !== '/waitlist'
@@ -13,6 +12,6 @@ export function middleware(request: NextRequest) {
   }
 }
 
-export const config = {
-  matcher: '/:path',
-}
+// export const config = {
+//   matcher: '/:path',
+// }

@@ -189,18 +189,18 @@ const WaitlistSignup = () => {
 
   const submitForm = async () => {
     console.log('Submitting form')
-    await registerWaitlist({
-      companyEmail,
-      companyName,
-      companyType,
-      locations,
-      adSpaceTypes,
-      ageRange,
-      genders,
-      industries,
-      campaignStart,
-      campaignEnd,
-    })
+    // await registerWaitlist({
+    //   companyEmail,
+    //   companyName,
+    //   companyType,
+    //   locations,
+    //   adSpaceTypes,
+    //   ageRange,
+    //   genders,
+    //   industries,
+    //   campaignStart,
+    //   campaignEnd,
+    // })
   }
 
   return (

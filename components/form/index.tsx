@@ -157,6 +157,7 @@ export default function QuillForm() {
             completeForm()
           }
         }}
+        applyLogic={false}
       />
     </div>
   )
