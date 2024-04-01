@@ -7,8 +7,13 @@ import {
   SelectValue,
   Select,
 } from '@/components/ui/select'
+import { redirect } from 'next/navigation'
 
-export default function Home() {
+export default async function Home() {
+  if (process.env.NODE_ENV === 'production') {
+    return redirect('/waitlist')
+  }
+
   return (
     <main className="w-full min-h-screen flex flex-col">
       <section id="hero" className="w-full bg-slate-500 h-[400px]">
