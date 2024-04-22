@@ -195,19 +195,21 @@ export default function QuillForm() {
   ]
 
   return (
-    <div className="bg-black h-screen">
+    <div className="bg-white h-screen">
       {!companyType ? (
         <div id="forms__section1" className="forms__section__styles">
-          <h1 className="forms__heading__styles">Hello, tell us about you!</h1>
+          <h1 className="forms__heading__styles !text-black">
+            Hello, tell us about you!
+          </h1>
           <div className="w-full flex flex-col gap-4">
             <button
-              className="forms__button__styles hover:bg-gradient-to-br hover:from-purple-main hover:to-pink-main transition-colors"
+              className=" !text-black forms__button__styles hover:bg-gradient-to-br hover:from-purple-main hover:to-pink-main transition-colors"
               onClick={() => setCompanyType('advertiser')}
             >
               I am a Business Owner
             </button>
             <button
-              className="forms__button__styles hover:bg-gradient-to-br hover:from-purple-main hover:to-pink-main transition-colors"
+              className=" !text-black forms__button__styles hover:bg-gradient-to-br hover:from-purple-main hover:to-pink-main transition-colors"
               onClick={() => setCompanyType('provider')}
             >
               I am an Ad Space Provider
